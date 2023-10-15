@@ -1,0 +1,327 @@
+body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: Quicksand, sans-serif;
+    background-color: #DDE6ED;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+}
+
+#contact{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 12%;
+}
+
+p{
+    font-size: 20px;
+    text-align: left;
+}
+.block{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#selfie{
+    margin: 0 auto;
+    padding: 5%;
+    margin-top: 40px;
+    max-height: 300px;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+#selfie img{
+    height: 100%;
+    width: 100%;
+}
+
+.text-container{
+    margin: 0 auto;
+    text-align: justify;
+
+}
+
+.course{
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    text-align: center;
+}
+
+.triple{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.triple div{
+    padding: 10px;
+}
+
+#logo {
+    margin-top: 5%;
+}
+
+.triple img{
+    height: 250px;
+    width: 300px;  
+}
+
+#logo img{
+    height: 100px;
+    width: 100px;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    background-color: #27374D;
+    padding: 15px;
+}
+
+nav ul {
+    margin-left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 16px;
+}
+
+#name{
+    color: #DDE6ED;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+nav ul li a {
+    color: #DDE6ED;
+    font-style: italic;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+
+/*
+Resume html has special style.
+*/
+
+.r-block{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.r-block p {
+    font-size: 18px;
+}
+
+#resume ul li{
+    text-align: left;
+    font-size:18px;
+    padding: 0px;
+}
+
+#resume ul li::marker{
+    margin-left: 2%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr, td {
+
+    font-size: 18px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.zoomed {
+    transform: scale(1.5); 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /*Make all things smaller*/
+    .block{
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 1.2rem;
+        margin: auto;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    .triple{
+        width: 100%;
+    }
+
+    .triple img{
+        height:80%;
+        width: 80%; 
+    }
+
+    .block{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .course{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .r-block p {
+        font-size: 16px;
+    }
+    
+    table,
+    tr,
+    td {
+        display: block;
+        
+    }
+
+    td {
+        border: none;
+        position: relative;
+        white-space: normal;
+        text-align: left;
+    }
+
+    td:before {
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        content: attr(data-label);
+        font-weight: bold;
+    }
+    #contact{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 180px;
+    }
+
+    header {
+        display: block;
+        position: fixed;
+        margin-left: 0px;
+        
+        width: 100%;
+        top: 0;
+        left:0;
+        background-color: #27374D;
+        padding: 0px;
+    }
+    
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    #selfie{
+        margin-top: 180px;
+        padding: 5%;
+    }
+
+    #download{
+        margin-top: 180px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /*Nothing special*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .triple img{
+        max-height: 300px;
+        width: 360px;  
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .triple{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .triple img{
+        max-height: 200px;
+        max-width: 240px;  
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .triple{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

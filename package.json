@@ -1,0 +1,9 @@
+{
+    "name": "Personal Webpage of Yanying Xiang",
+    "scripts": {
+        "start": "http-server"
+    },
+    "dependencies": {
+        "http-server": "*"
+    }
+}
