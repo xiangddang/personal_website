@@ -1,2 +1,2 @@
-# personal_website
-My personal website
+# My personal website
+This is a project for the course CS5610 Web Development in May 2023. The assignment required creating a personal website using only pure HTML, CSS, and jQuery, with restrictions on third-party libraries. Originally, this repository was private in my Khoury College GitHub account. However, I now intend to make regular updates to my personal website, so I have transferred it to my own GitHub account.
